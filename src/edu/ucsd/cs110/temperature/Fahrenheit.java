@@ -9,12 +9,21 @@ public class Fahrenheit extends Temperature {
         super(t);
     }
 
+    @Override
+    public Temperature toCelsius() {
+        value = ((value - 32) * 5) / 9;
+        return this;
+    }
+
+    @Override
+    public Temperature toFahrenheit() {
+        return this;
+    }
 
 
     public String toString()
     {
-        // TODO: Complete this method
-        return "";
+        return Float.toString(value);
     }
 }
 
