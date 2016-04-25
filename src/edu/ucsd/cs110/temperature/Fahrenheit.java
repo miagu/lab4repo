@@ -23,7 +23,7 @@ public class Fahrenheit extends Temperature {
 
     public String toString()
     {
-        return Float.toString(value);
+        return Float.toString(value) + " F";
     }
 }
 
